@@ -1,210 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EMTU - </title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMTU - Learning</title>
+    <link rel="stylesheet" href="style-2.css">
+    <!-- Icon Library for Hamburger Menu -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-  <section>
-    <nav class="navbar">
-      <div class="brand">
-        <a href="#home"><img src="IMG/logo.png" width="120px" alt="Logo"></a>
+
+  <!-- Navigation Section -->
+  <nav class="navbar">
+    <div class="brand">
+      <a href="#introduction">
+        <img src="IMG/logo.png" width="120px" alt="EMTU Logo">
+      </a>
+    </div>
+    <div class="hamburger">
+      <i class='bx bx-menu'></i>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#introduction" class="nav-link">Home</a></li>
+      <li><a href="https://tm-emtu.github.io/Portfulio/" class="nav-link">Portfolio</a></li>
+    </ul>
+  </nav>
+
+  <!-- Introduction Section -->
+  <section id="introduction" class="introduction-section">
+    <div class="intro-container">
+      <div class="intro-text">
+        <h1>Welcome to Learning with <span>Emt</span>u</h1>
+        <p>
+          Unlock your potential with tailored learning resources, interactive guides, and hands-on projects. Whether you're just starting or looking to expand your expertise, EMTU Learning is here to support your journey. Let's learn and grow together!
+        </p>
+        <a href="#intro" class="explore-btn">Explore Learning Resources</a>
       </div>
-      <div class="hamburger">
-        <i class='bx bx-menu'></i>
+      <div class="intro-image">
+        <img src="IMG/learning-intro.webp" width="400px" alt="Learning Introduction">
       </div>
-      <ul class="nav-links">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#About" class="nav-link">About</a></li>
-        <li><a href="#Skills" class="nav-link">Skills</a></li>
-        <li><a href="#Contact" class="nav-link">Contact</a></li>
-        <!-- <li><a href="learning.html" class="nav-link">Learning</a></li> -->
+    </div>
+  </section>
+
+<!-- Intro to programing -->
+  <section id="intro">
+    <h1 id="intro">What is Programming?</h1>
+    <div>
+        <p>Programming is the process of creating a set of instructions for a computer to perform tasks. It enables us to solve problems, automate processes, and create innovative solutions in various fields.</p><br>
+    </div>
+
+    <div id="why-program">
+        <h2>Why Learn Programming?</h2><br>
+        <ul>
+            <li>Enhances problem-solving skills.</li>
+            <li>Opens doors to exciting career opportunities.</li>
+            <li>Allows you to build your own applications and projects.</li>
+            <li>Empowers you to innovate and create value in the digital age.</li>
+            <br>
+        </ul>
+      </div>
+
+
+    <div id="getting-started">
+        <h2>Getting Started</h2><br>
+        <p>To begin your programming journey, start with these simple steps:</p>
+        <ol>
+            <li>Choose a programming language (e.g., Python, JavaScript).</li>
+            <li>Set up your development environment.</li>
+            <li>Follow tutorials and practice coding daily.</li>
+            <li>Work on small projects to build confidence.</li>
+        </ol>
+      </div>
+</section>
+
+  <!-- Learning Section -->
+  <section id="pdf-guides">
+    <div class="container">
+      <h1>Learning Resources</h1>
+      <p>Your gateway to knowledge and skill development. Explore resources, guides, and projects tailored to help you grow.</p>
+      
+      <h2>PDF Guides</h2>
+      <div class="pdf-guides">
+        <!-- Guide 1 -->
+        <div class="guide-box">
+          <img src="guide/Pdf-1.png" alt="Guide 1 Image">
+          <h3>Guide 1: (My guide) NLP in Simple English</h3>
+          <a href="404.html" 
+           class="download-btn">Download</a>
+        </div>
+
+        <!-- Guide 2 -->
+        <div class="guide-box">
+          <img src="guide/pdf-2.png" alt="Guide 2 Image">
+          <h3>Guide 2: Python by code with harry</h3><br>  
+          <a href="guide/guide-2.pdf" download class="download-btn">Download</a>
+        </div>
+
+  </section>
+
+<!-- Recommended Courses Section -->
+ <section id="recommended-courses">
+  <div class="container">
+    <h1>Recommended Courses</h1>
+    <p>Your gateway to knowledge and skill development. Explore resources, guides, and projects tailored to help you grow.</p>
+    <div class="courses">
+      <!-- Course 1 -->
+      <div class="course-box">
+        <h3>Python for Beginners <br>‎ </h3>
+        <a href="https://www.udemy.com/course/python-for-beginners-complete-python-programming/" class="c-button c-button--gooey">
+          Enroll Now <br>
+          <div class="c-button__blobs">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </a>
+      </div>
+      
+      <!-- Course 2 -->
+      <div class="course-box">
+        <h3>Java Programming Masterclass</h3>
+        <a href="https://www.udemy.com/course/java-the-complete-java-developer-course/" class="c-button c-button--gooey">
+          Enroll Now
+          <div class="c-button__blobs">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="course-box">
+        <h3>Full Stack Web <br>Development</h3>
+        <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" class="c-button c-button--gooey">
+          Enroll Now
+          <div class="c-button__blobs">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gooey Filter (Required) -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+  <defs>
+      <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" 
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+          <feBlend in="SourceGraphic" in2="goo"></feBlend>
+      </filter>
+  </defs>
+</svg>
+
+
+
+  <!-- resources -->
+  <section id="resources">
+    <div class="container">
+      <h2>Recommended Tools & Resources</h2>
+      <ul>
+        <li><a href="https://code.visualstudio.com/">Visual Studio Code</a> - A powerful code editor.</li>
+        <li><a href="https://jupyter.org/">Jupyter Notebook</a> - Interactive computing environment.</li>
+        <li><a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a> - Learn practical Python programming.</li>
       </ul>
-    </nav>
-  </section>
-
-  <section class="hero" id="home">
-    <div class="home_data" >
-      <h1>Hi,<br>I'am Tanjil Mahmud Emtu <br>Aspiring AI Engineer</h1>
-      <a href="https://tm-emtu.github.io/Learning_with_me/" class="btn">Learn With Me</a>
-    </div>
-    <div class="home_img">
-      <img src="IMG/my.png" alt="">
     </div>
   </section>
-
-  <section class="About" id="About">     
-    <div class="content">
-      <img src="IMG/my-2.png"/>
-      <div class="text">
-        <h1>About Me</h1>
-        <p>Hello! My name is <strong>Tanjil Mahmud Emtu</strong>. I am a 14-year-old tech enthusiast from Bangladesh, deeply passionate about coding and innovation. My journey in technology began with curiosity and has grown into a dedicated pursuit of excellence in the field of AI.</p>
-        <p>I have successfully mastered <strong>Python</strong> and am now diving into the fascinating realms of <strong>Artificial Intelligence</strong>, and <strong>Machine Learning</strong> I am focused on honing my skills as a <strong>Generative AI Engineer</strong>, with a dream of contributing to cutting-edge technologies.</p>
-        <p>By the time I turn 16, I aspire to secure a role at a leading tech company and make a meaningful impact in the industry. Beyond coding, I enjoy sharing knowledge and helping others explore the world of technology.</p>
-        <p>I also love sharing my knowledge with people, which fuels my passion for <strong>teaching</strong>. To make learning accessible, I’ve created a <a href="https://tm-emtu.github.io/Learning_with_me/" class="learn" target="_blank"><b>"Learn" page </b></a> where you can explore tutorials, resources, and guides that I’ve developed. If you’re eager to learn from me, feel free to click and dive in!</p>
-        <p>Welcome to my journey of innovation, creativity, and lifelong learning!</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="Skills" id="Skills">
-    <h1>Skills</h1>
-    <div class="skills-container">
-      <div class="skill">
-        <h2>Python</h2>
-        <div class="progress-bar">
-          <div class="progress" style="width: 100%"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <h2>HTML</h2>
-        <div class="progress-bar">
-          <div class="progress" style="width: 100%"></div>
-        </div>
-      </div>
-    
-      <div class="skill">
-        <h2>Natural Language Processing (NLP)</h2>
-        <div class="progress-bar">
-          <div class="progress" style="width: 50%"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <h2>Flask</h2>
-        <div class="progress-bar">
-          <div class="progress" style="width: 60%"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <h2>CSS</h2>
-        <div class="progress-bar">
-          <div class="progress" style="width: 60%"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <h2>SQL</h2>
-        <div class="progress-bar">
-          <div class="progress" style="width: 40%"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-section" id="Contact">
   
-    <div class="contact-form-container">  
-      <h1>Messege me <br><br></h1>
-      <form action="https://formspree.io/f/myzzbdnb" method="post">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first-name" placeholder="Please enter your first name..." required>
-  
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Please enter your email..." required>
-  
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Please enter your phone number..." required>
-  
-        <label for="query">What do you have in mind?</label>
-        <textarea id="query" name="query" rows="4" placeholder="Please enter your query..." required></textarea>
-  
-        <button type="submit">Submit</button>
-      </form>
-      <a href="mailto:tmemtu123@gmail.com" class="contact-icon" title="Email">
-        <i class='bx bxl-gmail'></i>
-      </a>
-      <a href="https://github.com/your-username" class="contact-icon" title="GitHub">
-        <i class='bx bxl-github'></i>
-      </a>
-      <a href="https://www.linkedin.com/in/tanjil-mahmud-1551aa334/" class="contact-icon" title="LinkedIn">
-        <i class='bx bxl-linkedin'></i>
-      </a>
-
-    </div>
-  </section>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const navbarHeight = 80;
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-link');
-        const hamburger = document.querySelector('.hamburger');
-        const navLinksContainer = document.querySelector('.nav-links');
-    
-        // Utility: Debounce function
-        const debounce = (func, delay = 100) => {
-            let timeout;
-            return (...args) => {
-                clearTimeout(timeout);
-                timeout = setTimeout(() => func.apply(this, args), delay);
-            };
-        };
-    
-        // Highlight the active navigation link based on the current scroll position
-        const highlightActiveNavLink = () => {
-            const scrollY = window.scrollY + navbarHeight;
-            let currentSectionId = '';
-    
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionBottom = sectionTop + section.offsetHeight;
-    
-                if (scrollY >= sectionTop && scrollY < sectionBottom) {
-                    currentSectionId = section.getAttribute('id');
-                }
-            });
-    
-            navLinks.forEach(link => link.classList.remove('active'));
-    
-            if (currentSectionId) {
-                const activeLink = document.querySelector(`.nav-link[href="#${currentSectionId}"]`);
-                if (activeLink) activeLink.classList.add('active');
-            }
-        };
-    
-        // Smooth scrolling for navigation links
-        const setupSmoothScrolling = () => {
-            navLinks.forEach(link => {
-                link.addEventListener('click', e => {
-                    const href = link.getAttribute('href');
-                    if (href && href.startsWith('#')) {
-                        e.preventDefault();
-                        const target = document.querySelector(href);
-                        if (target) {
-                            window.scrollTo({
-                                top: target.offsetTop - navbarHeight,
-                                behavior: 'smooth',
-                            });
-                        }
-                    }
-                });
-            });
-        };
-    
-        // Toggle mobile navigation menu
-        const setupHamburgerMenu = () => {
-            if (hamburger && navLinksContainer) {
-                hamburger.addEventListener('click', () => {
-                    navLinksContainer.classList.toggle('active');
-                });
-            }
-        };
-    
-        // Initialize all features
-        const init = () => {
-            setupSmoothScrolling();
-            setupHamburgerMenu();
-            window.addEventListener('scroll', debounce(highlightActiveNavLink));
-            highlightActiveNavLink();
-        };
-    
-        init();
-    });
-    </script>
-    
-    
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Learning with Emtu. All Rights Reserved.</p>
+  </footer>
+ </script> 
 </body>
+
 </html>
