@@ -126,14 +126,15 @@
 
     </div>
   </section>
-  <script>
+<script>
     document.addEventListener('DOMContentLoaded', () => {
         const navbarHeight = 80;
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-link');
         const hamburger = document.querySelector('.hamburger');
         const navLinksContainer = document.querySelector('.nav-links');
-    
+        const elements = document.querySelectorAll('.hidden');
+
         // Utility: Debounce function
         const debounce = (func, delay = 100) => {
             let timeout;
@@ -142,29 +143,29 @@
                 timeout = setTimeout(() => func.apply(this, args), delay);
             };
         };
-    
+
         // Highlight the active navigation link based on the current scroll position
         const highlightActiveNavLink = () => {
             const scrollY = window.scrollY + navbarHeight;
             let currentSectionId = '';
-    
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionBottom = sectionTop + section.offsetHeight;
-    
+
                 if (scrollY >= sectionTop && scrollY < sectionBottom) {
                     currentSectionId = section.getAttribute('id');
                 }
             });
-    
+
             navLinks.forEach(link => link.classList.remove('active'));
-    
+
             if (currentSectionId) {
                 const activeLink = document.querySelector(`.nav-link[href="#${currentSectionId}"]`);
                 if (activeLink) activeLink.classList.add('active');
             }
         };
-    
+
         // Smooth scrolling for navigation links
         const setupSmoothScrolling = () => {
             navLinks.forEach(link => {
@@ -183,7 +184,7 @@
                 });
             });
         };
-    
+
         // Toggle mobile navigation menu
         const setupHamburgerMenu = () => {
             if (hamburger && navLinksContainer) {
@@ -192,7 +193,18 @@
                 });
             }
         };
-    
+
+        // Intersection Observer for hidden elements
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        elements.forEach(el => observer.observe(el));
+
         // Initialize all features
         const init = () => {
             setupSmoothScrolling();
@@ -200,10 +212,10 @@
             window.addEventListener('scroll', debounce(highlightActiveNavLink));
             highlightActiveNavLink();
         };
-    
+
         init();
     });
-    </script>
+</script>
     
     
 </body>
